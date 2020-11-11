@@ -1,0 +1,424 @@
+
+body{
+    width:100%;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*__________________________________________start navigation________________________________*/
+
+.home .menu .navbar .navbar-brand{
+    padding: 0 2rem 0 5rem;
+    font-weight: 500;
+    color:500;
+}
+
+.home .menu .nav-item .nav-link{
+    font-weight:500;
+    color:white;
+    text-transform: uppercase;
+    padding:0 1.7rem 0 1.7rem;
+}
+
+.home .menu .navbar-nav a:hover{
+    color:blue;
+}
+/*___________________________________________end navigation__________________________________*/
+
+/*__________________________________________banner___________________________________________*/
+
+#mainpage{
+   background: url("https://cdn.pixabay.com/photo/2015/07/28/22/01/office-865091_960_720.jpg");
+   width:100%;
+   height:100vh;
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+
+
+}
+.banner{
+    width:100%;
+    height:inherit;
+    color:white;
+    text-align:center;
+    position:relative;
+    
+
+}
+.center-div{
+    width:100%;
+    height:auto;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    display: inline-block;
+    text-align: center;
+    
+}
+.center-div p{
+    padding-left:100px;
+    padding-right:100px;
+}
+.center-div h4{
+    width:0ch;
+    display:inline-block;
+    overflow:hidden;
+    white-space:nowrap;
+    animation:text 9s steps(20)infinite;
+    text-align: center;
+}
+
+@keyframes text{
+    0%{
+        width:0ch;
+    }
+    50%{
+        width: 20ch;
+    }
+}
+
+.Iconss{
+    justify-content: center;
+}
+.Iconss a{
+    
+    height:50px;
+    width:50px;
+    background-color:white;
+    border-radius:15px;
+    text-align:center;
+    line-height:60px;
+    margin:15px;
+    border:1px solid white;
+}
+
+.Iconss i{
+    transition:all 0.3s linear;
+}
+.Iconss a:hover i{
+    transform:scale(1.4);
+}
+.fa-youtube{
+    color:red;
+}
+
+.Iconss .instagram{
+    background-color: #e84393;
+    color:white;
+}
+.Iconss .linkedin{
+    background-color:#0097e6;
+    color:white;
+}   
+
+.Iconss .facebook{
+    background-color:#29209b;
+    color:white;
+}  
+.Iconss .twitter{
+    background-color:rgb(25, 207, 207);
+    color:white;
+
+} 
+
+
+
+
+
+/*___________________________________________end banner______________________________________*/
+
+/*__________________________________________start about______________________________________*/
+
+#about{
+    width:100%;
+    padding-top:3rem;
+    padding-bottom:5rem;
+}
+#about .about-img{
+    min-width: 50%;
+}
+#about .about-title h4 span{
+    font-size: 25px;
+ 
+}
+#about .about-title h4 span:before{
+    display:inline-block;
+   
+    content:'';
+    animation:animate infinite 5s;
+}
+@keyframes animate{
+    0%{
+        color:red;
+        content:'DESIGNER';
+    }
+    40%{
+        color:blue;
+        content:'DEVLOPER';
+    }
+    50%{
+        color:green;
+        content:'FREELANCER';
+    }
+}
+/*#about .about-img{
+    opacity: 0;
+}
+#about .about-img .animated{
+    opacity: 1;
+}
+
+    
+
+
+/*__________________________________________end about_________________________________________*/
+
+
+
+
+/*___________________________________________3box_______________________________________*/
+
+#header-extradiv{
+    width:100%;
+    height:auto;
+    padding:100px 0;
+    border:2px solid grey;
+    background-color: black;
+    
+    
+}
+.extra-div .ic{
+    text-align: center;
+
+}
+.extra-div{
+    background:#fff;
+    border:medium none;
+    
+    border-radius:3px;
+    transition:0.3s;
+    
+}
+.extra-div h2{
+    font-size:25px;
+   
+    font-weight:bold;
+    word-spacing:4px;
+}
+#header-extradiv .a{
+    background-color: rgb(83, 67, 67);
+    color:white;
+}
+#header-extradiv .b{
+    background-color: grey;
+    color:white;
+}
+#header-extradiv .c{
+    background-color: rgb(83, 67, 67);
+    color:white;
+}
+
+
+
+.extra-div:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+    transform:translateY(-20px);
+}
+
+
+
+
+
+
+
+/*__________________________________________ 3 box______________________________________________*/
+
+/*_________________________________________start service____________________________________________________*/
+
+.serviceffers{
+    width:100%;
+    background: #f7f7f9;
+    padding:100px 0;
+    
+}
+
+.heading{
+    margin-bottom:50px;
+}
+
+
+
+/*__________________________________________end service____________________________________________________*/
+
+
+/*__________________________________________ start contact___________________________________________________*/
+
+
+.contact-form{
+    background:rgba(0,0,0,.6);
+    color:white;
+   
+    padding:20px;
+    
+}
+#contact{
+    background:linear-gradient(40deg, rgb(42, 42, 68) 50%,rgb(189, 184, 184) 0%);
+    padding-top:80px;
+    padding-bottom:80px;
+    width:100%;
+}
+#contact .contact-form hr{
+    background-color: white;
+}
+
+/*____________________________________________end contact_________________________________________________*/
+
+/*____________________________________________start footer________________________________________________*/
+
+
+#footer{
+    border-top:2px solid grey;
+    width:100%;
+}
+
+
+.copyright{
+    background-color:rgb(34, 28, 28);
+    color:white;
+    font-size: 14px;
+    padding:10px;
+  
+}
+
+
+/*____________________________________________end footer__________________________________________________*/
+
+
+
+
+
+/*_________________________________________Project section  Start__________________________________*/
+
+#Poster{
+    background-color:black;
+    width:100%;
+    height:400px;
+    
+}
+
+.PFontContaint{
+        width:100%;
+        height:inherit;
+        color:white;
+        position:relative;
+        text-align:center;
+        padding-top: 150px;
+        justify-content: center;
+        
+    }
+    
+    
+/* sample work of project */
+
+.Pro_one{
+    background-color: rgb(226, 226, 231);
+}
+
+.IC{
+    display:flex;
+    justify-content: center;
+    
+}
+.IC a{
+    height:45px;
+    width:60px;
+    background-color:brown;
+    border-radius:px;
+    text-align:center;
+    line-height:55px;
+    margin:8px;
+}
+.IC i{
+    transition:all 0.3s linear;
+}
+.IC a:hover i{
+    transform:scale(1.4);
+}
+.IC .fa-eye{
+    color:white;
+}
+
+.IC .fa-headphones{
+    color:white;
+}
+
+.IC .fa-download{
+    color:white;
+}
+.IC .eye{
+    background-color:rgb(59, 59, 136);
+}
+.IC .download1{
+    background-color:brown;
+}
+.IC .download2{
+    background-color: orange;
+}
+.IC .download3{
+    background-color: brown;
+}
+.IC .download4{
+    background-color: orange;
+}
+.IC .headphone{
+    background-color:rgb(14, 14, 75) ;
+}
+
+.card{
+    box-shadow: 5px 0px 6px rgb(145, 140, 140);
+}
+
+/*____________________________end project_________________________________________________________*/
+
+
+/* ___________________________________________start footer_________________________________________*/
+
+.copyright1{
+    background-color:rgb(34, 28, 28);
+    color:white;
+    font-size: 14px;
+    padding:10px;
+  
+}
+#Footer1{
+    border-top: 2px solid grey;
+    width:100%;
+
+}
+#footer2{
+    border-top:2px solid grey;
+    width:100%;
+}
+
+
+.copyright2{
+    background-color:rgb(34, 28, 28);
+    color:white;
+    font-size: 14px;
+    padding:10px;
+  
+}
+
+/*_________________________________________________End footer_____________________________________*/
+
+
+
